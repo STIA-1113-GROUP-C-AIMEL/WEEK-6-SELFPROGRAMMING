@@ -1,0 +1,50 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class MyGradeSwitch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// to declare
+		// take inputs
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter grade from A, B, C, D, E, and F: ");
+		String txt = scan.next();
+		char grade = txt.charAt(0);
+		
+		// print output
+		switch (grade) {
+		case 'A':
+			System.out.println("Grade A mark >=90");
+			break;	
+		case 'B':
+			System.out.println("Grade B mark >=80 and less than 90");
+			break;
+		case 'C':
+			System.out.println("Grade C mark >=70 and less than 80");
+			break;
+		case 'D':
+			System.out.println("Grade D mark >=60 and less than 70");
+			break;
+		case 'E':
+			System.out.println("Grade E mark >=50 and less than 60");
+			break;
+		case 'F':
+			System.out.println("Grade F mark <=40");
+			break;
+			
+		default:
+				System.out.println("Invalid Grade");
+		}
+		scan.close();
+	}
+
+}
+
+OUTPUT
+
+Enter grade from A, B, C, D, E, and F: 
+A
+Grade A mark >=90
+
